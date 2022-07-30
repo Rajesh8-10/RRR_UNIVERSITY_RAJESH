@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------------------------------------HOME-----------------------------------------------*/
+
+.header{
+    width: 100;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,6,30,0.6),rgba(4,6,30,0.6)),url(https://macksennettstudios.net/wp-content/uploads/2020/12/a-director-of-photography-does-their-best-to-realize-the-director-s-vision.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header h1{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color:floralwhite;
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+} 
+.navlinks ul li::after{
+     content: '';
+     width: 0%;
+     height: 3px;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+    background-color: blue;
+}
+.textbox{
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h3{
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: normal;
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white; 
+    text-align: center;
+}
+@media(max-width:500px){
+    .textbox h3{
+        font-size: 20px;
+    }
+    .navlinks {
+        position: absolute;
+        background: blueviolet;
+        height: 100vh;
+        width: 120px;
+        top: 0;
+        right:0;
+        text-align: center;
+        z-index: 2;
+    }
+    .navlinks ul li{
+    display: block;
+     }
+}
+
+/*-----------------------------COURSES--------------------------------------------------*/
+
+#course{
+    background-image: url(https://images.pexels.com/photos/3810546/pexels-photo-3810546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+     background-size: cover;
+     width: 100%;
+     padding-bottom: 1px;
+}
+#titleCourse h1{
+    font-size: 30px;
+    font-weight:bold;
+    text-transform: uppercase;
+    text-underline-offset: 5px;
+    color:black;
+}
+#titleCourse p{
+   text-align: justify;
+   color: white;
+   font-weight: bold;
+}
+#course .col-md-4{
+    color:cyan;
+    text-align: center;
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    padding: 15px 15px;
+}
+.col-md-4:hover{
+    box-shadow: 0 0 30px white;
+}
+.col-md-4 p{
+    text-align: justify;
+    color:white;
+    text-decoration: solid;
+}
+
+/*-------------------------------------------------------ABOUT US---------------------------------------------*/
+
+.aboutus{
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    background-color:cadetblue;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.aboutus h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.col-md-6 img{
+   width: 590px;
+    height: 504px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.col-md-6 p{
+    box-sizing: border-box;
+    color: black;
+    text-decoration: solid;
+    text-align: justify;
+    margin-right: 10px;
+    display: table;
+    padding: 15px 15px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+@media(max-width: 700px){
+    .col-md-6 img{
+        margin-left: -120px;
+        margin-right: 0px;
+    }
+}
+
+/*--------------------------------------------------------BLOG------------------------------------------*/
+
+.blog{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    background-color:aliceblue;
+    position: relative;
+    background-size: cover
+}
+.blog h1{
+    color: magenta;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/*---------------------------------------------CONTACT--------------------------------------------*/
+
+#contact{
+    padding: 1px;
+    background: #13688c;
+}
+.contact-heading h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+#contact input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: lavender;
+    color:black;
+    font-weight: bold;
+}
+#contact textarea{
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#contact textarea::-webkit-scrollbar{
+    width: 10px;
+}
+#contact iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#submitbtn{
+    text-align: center;
+}
+::placeholder { 
+    color: black;
+    font-weight: bold;
+    opacity: 1; 
+  }
+  #copy{
+    background-color: darkgray;
+    font-weight: bold;
+  }
